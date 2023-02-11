@@ -1,10 +1,105 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  /*font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;*/
 }
 
-html, body {
-    background-color: #eded3e3;
-    border:  2px  blue solid;
+html,
+body {
+  /* background-color: #edede3; */
+}
+
+header {
+  background-image: url(../images/design1_image1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 30vh;
+  max-width: 100%;
+  padding-bottom: 4rem;
+}
+
+h1 {
+  display: inline-block;
+  width: 70%;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+header img {
+  position: absolute;
+  z-index: 1;
+  border-radius: 2rem;
+  border: 1px yellow solid;
+  background-color: #edede3ee;
+  height: 30vh;
+  width: 30vh;
+  margin: 15vh;
+}
+
+.title {
+  background-color: black;
+  color: #edede3;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.container{
+  display: block;
+  /* height: 75vh; */
+  width: 100%;
+}
+
+.container aside {
+  /* height: 50vh; */
+  /* height: 75vh; */
+  max-width: 25vw;
+  padding-left: 3vh;
+  display: inline-block;
+  /* border: 2px blue solid; */
+}
+
+.derecha {
+  position: absolute;
+  display: inline-block;
+  margin-left: calc( 100vw - 30%);
+  width: calc(100vh - 25%);
+  margin-top: 3rem;
+}
+
+.derecha img{
+  width: 100%;
+}
+
+.container .secciones{
+  position: absolute;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+aside nav {
+  padding: 1rem;
+}
+
+nav ul{
+  list-style-type: none;
+  padding-bottom: 100%;
+}
+
+ul li {
+  padding-top: 2rem;
+}
+
+
+section article{
+  margin-bottom: 2rem;
+ 
 }
