@@ -42,12 +42,15 @@ header img {
 .title {
   background-color: black;
   color: #edede3;
+
 }
 
 h2 {
   margin: auto;
   text-align: center;
   padding: 0.5rem;
+  
+
 }
 
 .container {
@@ -88,6 +91,12 @@ h2 {
 
 .secciones {
   width: 75%;
+}
+
+section>h4{
+  text-align: left;
+  margin-left: 10%;
+
 }
 
 aside nav {
