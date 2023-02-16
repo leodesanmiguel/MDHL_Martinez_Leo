@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+</head>
+
+<body>
+    <header class="social">
+        <div class="sticky-wrapper" style="height: 76px;">
+            <nav>
+                <img src="./assets/images/Logo_Mighty_ducks-01.png" alt="logo MDHL">
+                <h3> <a href="./index.html"> Mighty Ducks Hockey League </a></h3>
+                <ul>
+                    <li class="menu-1"><a href="./events.html">Upcoming</a></li>
+                    <li class="menu-2"><a href="./about.html">About MDHL</a></li>
+                    <li class="menu-3"><a href="./game.html">Game info</a></li>
+                    <li class="menu-4"><a href="./rules.html">Rules of Play</a></li>
+                    <li class="menu-5"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="secciones">
+            <section>
+                <form action="./show_data.html">
+                    <fieldset>
+                        <legend>
+                            <h2>Player Information</h2>
+                        </legend>
+                        <div class="form-row col-2">
+                            <label for="first-name">Player's First Name: <small>(NO NICKNAMES)</small>
+                                <input name="firstname" maxlength="80" type="text" id="firstname"><span
+                                    style="color:red;">*</span>
+                            </label>
+                            <label for="last-name">Last Name:
+                                <input name="lastname" maxlength="80" type="text" id="lastname"><span
+                                    style="color:red;">*</span>
+                            </label>
+                        </div>
+                        <div class="form-row col-1">
+                            <label for="street-address">Street Address:
+                                <input name="streetadress" maxlength="80" type="text" id="streetadress"><span
+                                    style="color:red;">*</span>
+                            </label>
+                        </div>
+                        <div class="form-row col-2">
+                            <label for="cityname">City:
+                                <input name="city" maxlength="80" type="text" id="city"><span
+                                    style="color:red;">*</span>
+                            </label>
+                            <label for="zip-code">Zip Code:
+                                <input name="zipcode" type="number" min="60000" max="60999" id="zipcode"><span
+                                    style="color:red;">*</span>
+                            </label>
+                        </div>
+
+                        <div class="form-row col-2">
+                            <label for="birth-day">Birth Date (mm/dd/yyyy):
+                                <input name="birthday" maxlength="80" type="date" id="birthday"><span
+                                    style="color:red;">*</span>
+                            </label>
+                            <label for="gender">Gender:
+                                <label> Female
+                                    <input name="gender" type="radio" value="F"> </label>
+                                <label> Male
+                                    <input name="gender" type="radio" value="M"> </label>
+                            </label>
+                        </div>
+                        <div class="form-row col-1">
+                            <label for="grade">Grade:
+                                <label> Pre-School
+                                    <input name="grade" type="radio" value="0"> </label>
+                                <label> 1st.
+                                    <input name="grade" type="radio" value="1"> </label>
+                                <label> 2nd.
+                                    <input name="grade" type="radio" value="2"> </label>
+                                <label> 3rd.
+                                    <input name="grade" type="radio" value="3"> </label>
+                                <label> 4th.
+                                    <input name="grade" type="radio" value="4"> </label>
+                                <label> 5th.
+                                    <input name="grade" type="radio" value="5"> </label>
+                            </label>
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h2>Which elementary school do you live near?</h2>
+                        </legend>
+                        <h3>Closest School</h3>
+                        <div class="form-row col-0">
+                            <label> AJ Katzenmaier
+                                <input name="school" type="checkbox" value="AJ Katzenmaier"> </label>
+                            <label> Greenbay
+                                <input name="school" type="checkbox" value="Greenbay"> </label>
+                            <label> Howard A Yeager
+                                <input name="school" type="checkbox" value="Howard A Yeager"> </label>
+                            <label> Marjorie P Hart
+                                <input name="school" type="checkbox" value="Marjorie P Hart"> </label>
+                            <label> North Elementay
+                                <input name="school" type="checkbox" value="North Elementay"> </label>
+                            <label> South Elementay
+                                <input name="school" type="checkbox" value="South Elementay"> </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <h2>What position(s) do you normaly play?</h2><small>(check all that apply)</small>
+                        </legend>
+                        <h3>Closest School</h3>
+                        <div class="form-row col-0">
+                            <label> AJ Katzenmaier
+                                <input name="school" type="checkbox" value="AJ Katzenmaier"> </label>
+                            <label> Greenbay
+                                <input name="school" type="checkbox" value="Greenbay"> </label>
+                            <label> Howard A Yeager
+                                <input name="school" type="checkbox" value="Howard A Yeager"> </label>
+                            <label> Marjorie P Hart
+                                <input name="school" type="checkbox" value="Marjorie P Hart"> </label>
+                            <label> North Elementay
+                                <input name="school" type="checkbox" value="North Elementay"> </label>
+                            <label> South Elementay
+                                <input name="school" type="checkbox" value="South Elementay"> </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h2>Uniform Size</h2>
+                        </legend>
+                        <div class="form-row col-0">
+                            <label> Youth Small
+                                <input name="ysamll" type="radio" value="0"> </label>
+                            <label> Youth Medium
+                                <input name="ymedium" type="radio" value="1"> </label>
+                            <label> Youth Large
+                                <input name="ylarge" type="radio" value="2"> </label>
+                            <label> Small
+                                <input name="samll" type="radio" value="3"> </label>
+                            <label> Medium
+                                <input name="medium" type="radio" value="4"> </label>
+                            <label> Large
+                                <input name="large" type="radio" value="5"> </label>
+                            <label> Extra-Large
+                                <input name="elarge" type="radio" value="6"> </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Permission to Play</h2>
+                        </legend>
+                        <div class="form-row col-1">
+                            <p class="permission">I, the parent or guardian of the minor registrant, agree that the
+                                registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
+                                In recognizing the possibility of physical injury associated with hockey and in
+                                consideration for the "League" accepting the registrant for its hockey programs and
+                                activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their
+                                employees and associated personnel and volunteers,including the facilities used for
+                                practices and games, against any claim by or on behalf of the registrant as a result of
+                                the registrant's participation in the programand/orbeing transported to or from MDHL
+                                sponsored activities,which transportation By signing below, I herebyagree
+                                andauthorizethe above.ln addition, by signing below, !also acknowledge that I have read
+                                the cancellation policy and agree to its terms.
+                            </p>
+                            <label> Parent/Guardian Full Name:
+                                <input name="fullname" maxlength="80" type="text" id="fullname"
+                                    placeholder="Last Name, First Name"><span style="color:red;">*</span> </label>
+                            <label> Parent/Guardian Signature:
+                                <textarea name="signature" id="signature" cols="30" rows="5"></textarea>
+                                <label> Date:
+                                    <input name="datenow" disabled type="text" id="datenow" value="16/02/2023"><span
+                                        style="color:red;">*</span> </label>
+                        </div>
+                    </fieldset>
+                    <button>Submit Registration</button>
+                </form>
+            </section>
+        </div>
+        <div class="derecha">
+            <figure>
+                <img src="./assets/images/hockey_3.jpg" alt="">
+                <figcaption>
+                    The two defensive players.
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer class="social">
+        <div class="social-city">
+            <p class="social-ico">&#9992;&nbsp
+                3843 N California Ave. Chicago, IL 60618 (773) 478-2609
+            </p>
+            <p>
+                &#9993;
+                <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
+            </p>
+        </div>
+        <div class="nav-net">
+            <ul>
+                <li class="menu-facebook"><a href=""><img src="./assets/images/social/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+                <li class="menu-instagram"><a href=""><img src="./assets/images/social/instagram.svg"
+                            alt="instagram"></a>
+                </li>
+                <li class="menu-twitter"><a href=""><img src="./assets/images/social/twitter.svg" alt="twitter"></a>
+                </li>
+                <li class="menu-youtube"><a href=""><img src="./assets/images/social/youtube.svg" alt="youtube"></a>
+                </li>
+                <li class="menu-twitch"><a href=""><img src="./assets/images/social/twitch.svg" alt="twitch"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
