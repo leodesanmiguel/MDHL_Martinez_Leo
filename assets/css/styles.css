@@ -162,24 +162,24 @@ footer.social .nav-net > ul > li img {
   list-style-type: none;
 }
 
-.sticky-wrapper li  {
+.sticky-wrapper li {
   font-size: 1.2rem;
   padding: 0.9em;
   width: calc(100% / 6);
-  border: 2px solid #6e809c; 
+  border: 2px solid #6e809c;
   margin: 2px;
   border-radius: 20px;
 }
 
-.sticky-wrapper a  {
+.sticky-wrapper a {
   text-decoration: none;
   width: 100%;
 }
 
-.sticky-wrapper li:hover, a:hover {
-background-color: #200e69;
-color: #ededa3;
-
+.sticky-wrapper li:hover,
+a:hover {
+  background-color: #200e69;
+  color: #ededa3;
 }
 
 /*-----------------------------------
@@ -228,7 +228,7 @@ color: #ededa3;
   align-content: stretch;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
@@ -299,7 +299,8 @@ h2.rules-row {
 
 article p,
 section p,
-.rules-row-field, form {
+.rules-row-field,
+form {
   width: 70%;
   margin-left: calc(30% / 2);
   border-radius: 0 0 20px 20px;
@@ -309,7 +310,8 @@ section p,
   padding-bottom: 3rem;
 }
 
-main .row-game, figure {
+main .row-game,
+figure {
   width: 70%;
   margin-left: calc(30% / 2);
   border-radius: 20px;
@@ -373,11 +375,10 @@ figure {
   padding: 0;
   z-index: -1;
   margin-bottom: 2rem;
-  
 }
 
-figure img{
-  border-radius: 20px 20px 0 0  ;
+figure img {
+  border-radius: 20px 20px 0 0;
   width: 100%;
   height: 50vh;
   margin: 0;
@@ -390,7 +391,7 @@ figcaption {
   padding: 1rem;
   font-style: italic;
   font-size: small;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 80%;
   margin-left: calc(20% / 2);
 }
@@ -398,8 +399,21 @@ figcaption {
 /*-----------------------------
   registration form
 ------------------------------*/
+.form {
+  /* width: 340px;
+  height: 440px; */
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
 
-fieldset{
+fieldset {
   border: 2px solid black;
   width: 90%;
   margin-left: calc(8% / 2);
@@ -408,28 +422,30 @@ fieldset{
   flex-direction: column;
 }
 
-fieldset h3, h2{
+fieldset h3,
+h2 {
   width: 100%;
   border: 0;
   background-color: rgb(206, 182, 182);
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   padding: 10px;
   margin: 0;
   margin-top: 1rem;
+  
 }
 
-fieldset .form-row{
+fieldset .form-row {
   display: flex;
   flex-direction: column;
-background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
-.form-row label{
+.form-row label {
   width: 100%;
   padding: 1rem;
   font-size: 1.2rem;
 }
-label input{
+label input {
   height: 2rem;
   width: 200px;
 }
@@ -443,23 +459,87 @@ label input{
   flex-direction: column;
 }
 
-button{
+button {
   width: 80%;
   font-size: x-large;
   margin-left: calc(20% / 2);
   margin-top: 2rem;
   padding: 1rem;
-  color: aquamarine;
-  background-color: blueviolet;
+  /* color: aquamarine;
+  background-color: blueviolet; */
   border-radius: 20px;
 }
+
+
+h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  /* width: 180px; */
+  color: #414190;
+  border-bottom: 3px solid #414190;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+p:before {
+  content: attr(type);
+  
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+/* div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+} */
+/* span {
+  margin: 0 5px 0 15px;
+} */
 
 /*--------------------------------
   tablas
 ---------------------------------*/
 
 table {
-  table-layout:fixed;
+  table-layout: fixed;
   width: 90%;
   border-collapse: collapse;
   border: 3px solid purple;
@@ -467,12 +547,11 @@ table {
   background: url(../images/design1_image1.jpg);
   color: rgb(20, 35, 75);
   margin-left: calc(6% / 2);
-  
 }
 
-thead th, tfoot th {
-  font-family: 'Rock Salt', cursive;
-  
+thead th,
+tfoot th {
+  font-family: "Rock Salt", cursive;
 }
 
 th {
@@ -494,15 +573,23 @@ thead th:nth-child(4) {
   width: 25%;
 }
 
-th, td {
+th,
+td {
   padding: 1rem;
 }
-thead, tfoot {
+thead,
+tfoot {
   text-shadow: 1px 1px 1px rgb(146, 39, 39);
 }
 
-thead th, tfoot th, tfoot td {
-  background: linear-gradient(to bottom, rgba(113, 36, 36, 0.1), rgba(226, 222, 222, 0.5));
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(113, 36, 36, 0.1),
+    rgba(226, 222, 222, 0.5)
+  );
   border: 3px solid purple;
 }
 
@@ -523,7 +610,7 @@ table {
 }
 
 caption {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   padding: 20px;
   font-style: italic;
   caption-side: bottom;
