@@ -176,3 +176,67 @@ footer.social .nav-net > ul > li img {
   portada
 -----------------------------------*/
 
+.videoWrapper {
+  position: flex;
+  margin: 3vh;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  z-index: -100;
+}
+
+.custom-video {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+.custom-video,
+.news-detail-image {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay {
+  background: linear-gradient(to top, #000, transparent 90%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.portada, .where-is {
+  position:relative ;
+  bottom: 390px;
+}
+
+.where-is h3 {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 3rem;
+  background-color: #000;
+  color: #ededa3;
+  width: 70%;
+  margin-left: calc(30% / 2);
+  border-radius: 20px 20px 0 0;
+}
+
+.where-is iframe{
+  text-align: center;
+  height: 70vh;
+  background-color: #000;
+  color: #ededa3;
+  width: 70%;
+  margin-left: calc(30% / 2);
+  border-radius: 0 0 20px 20px ;
+  border: 2px black solid;
+}
+
+/*----------------------------------
+  Upcoming Events
+----------------------------------*/
+
