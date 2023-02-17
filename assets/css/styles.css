@@ -211,7 +211,7 @@ footer.social .nav-net > ul > li img {
 
 .portada, .where-is {
   position:relative ;
-  bottom: 390px;
+  bottom: 370px;
 }
 
 .where-is h3 {
@@ -236,6 +236,26 @@ footer.social .nav-net > ul > li img {
   border: 2px black solid;
 }
 
+.titu-text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  text-align: center;
+}
+
+.titu-text p {
+  color: #edede3;
+  font-size: 2rem;
+}
+
+.titu-text h1 {
+  color: #ededa3;
+  text-align: center;
+  font-size: 6rem;
+}
 /*----------------------------------
   Upcoming Events
 ----------------------------------*/
