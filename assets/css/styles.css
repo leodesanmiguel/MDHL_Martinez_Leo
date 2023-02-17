@@ -14,9 +14,9 @@ body {
   width: auto;
 }
 
-h1 {
+/* h1 {
   line-height: normal;
-}
+} */
 
 p {
   letter-spacing: 0.5px;
@@ -140,7 +140,6 @@ footer.social .nav-net > ul > li img {
 
 .sticky-wrapper img,
 .sticky-wrapper h2 {
-  /* margin-top: 98vh; */
   width: 10%;
   align-items: center;
   text-align: center;
@@ -148,11 +147,11 @@ footer.social .nav-net > ul > li img {
 }
 
 .sticky-wrapper h2 {
-  width: 15%;
+  width: 25%;
 }
 .sticky-wrapper .menu {
-  width: 75%;
-  flex-grow: 5rem;
+  width: 65%;
+  flex-grow: 1rem;
   display: flex;
   justify-content: end;
 }
@@ -161,13 +160,26 @@ footer.social .nav-net > ul > li img {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  background-color: #edede3;
 }
 
-.sticky-wrapper li {
-  flex-grow: 4rem;
-  font-size: 2.5ex;
-  padding: 1.5ex;
+.sticky-wrapper li  {
+  font-size: 1.2rem;
+  padding: 0.9em;
+  width: calc(100% / 6);
+  border: 2px solid #6e809c; 
+  margin: 2px;
+  border-radius: 20px;
+}
+
+.sticky-wrapper a  {
+  text-decoration: none;
+  width: 100%;
+}
+
+.sticky-wrapper li:hover, a:hover {
+background-color: #200e69;
+color: #ededa3;
+
 }
 
 /*-----------------------------------
@@ -216,13 +228,19 @@ footer.social .nav-net > ul > li img {
   align-content: stretch;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
 .where-is h3,
 main h2.titule,
 h2.titu-game,
 h1.rules {
   text-align: center;
   align-self: flex-start;
-  margin-top: 0.5em;
+  /* margin-top: 0.5em; */
   font-size: 3rem;
   background-color: #000;
   color: #ededa3;
@@ -354,20 +372,27 @@ figure {
   flex-direction: column;
   padding: 0;
   z-index: -1;
+  margin-bottom: 2rem;
+  
 }
 
 figure img{
   border-radius: 20px 20px 0 0  ;
   width: 100%;
+  height: 50vh;
   margin: 0;
   padding: 0;
+  object-fit: cover;
 }
 
 figcaption {
   text-align: center;
+  padding: 1rem;
   font-style: italic;
   font-size: small;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 80%;
+  margin-left: calc(20% / 2);
 }
 
 /*-----------------------------
