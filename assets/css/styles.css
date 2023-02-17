@@ -139,7 +139,7 @@ footer.social .nav-net > ul > li img {
 }
 
 .sticky-wrapper img,
-.sticky-wrapper h2  {
+.sticky-wrapper h2 {
   /* margin-top: 98vh; */
   width: 10%;
   align-items: center;
@@ -147,29 +147,27 @@ footer.social .nav-net > ul > li img {
   flex-grow: 1rem;
 }
 
-.sticky-wrapper h2{
+.sticky-wrapper h2 {
   width: 15%;
 }
-.sticky-wrapper .menu{
+.sticky-wrapper .menu {
   width: 75%;
   flex-grow: 5rem;
   display: flex;
   justify-content: end;
 }
 
-
-.sticky-wrapper  ul {
+.sticky-wrapper ul {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   list-style-type: none;
   background-color: #edede3;
 }
 
-.sticky-wrapper  li {
+.sticky-wrapper li {
   flex-grow: 4rem;
   font-size: 2.5ex;
   padding: 1.5ex;
-  
 }
 
 /*-----------------------------------
@@ -209,15 +207,19 @@ footer.social .nav-net > ul > li img {
   left: 0;
 }
 
-.portada, .where-is {
-  position:flex ;
+.portada,
+.where-is {
+  position: flex;
   flex-direction: column;
   /* bottom: 300px; */
   align-items: flex-start;
   align-content: stretch;
 }
 
-.where-is h3 {
+.where-is h3,
+main h2.titule,
+h2.titu-game,
+h1.rules {
   text-align: center;
   align-self: flex-start;
   margin-top: 0.5em;
@@ -229,14 +231,14 @@ footer.social .nav-net > ul > li img {
   border-radius: 20px 20px 0 0;
 }
 
-.where-is iframe{
+.where-is iframe {
   text-align: center;
   height: 70vh;
   background-color: #000;
   color: #ededa3;
   width: 70%;
   margin-left: calc(30% / 2);
-  border-radius: 0 0 20px 20px ;
+  border-radius: 0 0 20px 20px;
   border: 2px black solid;
 }
 
@@ -261,6 +263,109 @@ footer.social .nav-net > ul > li img {
   font-size: 6rem;
 }
 /*----------------------------------
-  Upcoming Events
+  PAGES
 ----------------------------------*/
 
+article h3,
+section h3,
+h2.rules-row {
+  text-align: center;
+  background-color: #ededa3;
+  color: black;
+  width: 70%;
+  margin-top: 2rem;
+  margin-left: calc(30% / 2);
+  border-radius: 20px 20px 0 0;
+  border: 2px black solid;
+}
+
+article p,
+section p,
+.rules-row-field {
+  width: 70%;
+  margin-left: calc(30% / 2);
+  border-radius: 0 0 20px 20px;
+  border: 2px black solid;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+main .row-game, figure {
+  width: 70%;
+  margin-left: calc(30% / 2);
+  border-radius: 20px;
+  border: 2px black solid;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+main .row-game-map {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.maps {
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border: 2px solid blueviolet;
+  border-radius: 20px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.maps h3 {
+  width: 100%;
+  background-color: aquamarine;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  height: auto;
+  font-size: larger;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 90%;
+  border-radius: 0 0 20px 20px;
+}
+
+/*-----------------------------
+  rules
+------------------------------*/
+.rules-row-field li {
+  padding-top: 1rem;
+}
+
+/*-----------------------------
+  images right
+------------------------------*/
+
+figure {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  z-index: -1;
+}
+
+figure img{
+  border-radius: 20px 20px 0 0  ;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
