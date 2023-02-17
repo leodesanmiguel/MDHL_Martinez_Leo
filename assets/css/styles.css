@@ -11,7 +11,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
 }
 
 h1 {
@@ -27,19 +27,24 @@ p {
 ****************************************/
 header.social-index,
 footer.social {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   flex-direction: row;
-  max-width: 100%;
   background-color: rgb(192, 171, 226);
 }
 
 header.social-index .social-city,
 footer.social .social-city {
   display: flex;
+  align-items: flex-start;
   gap: 2rem;
-  margin-top: 2vh;
-  font-size: 1.2rem;
+  margin: 2vh 0 0 2vw;
+  font-size: 1.2em;
+}
+
+header.social-index .social-city .social-ico > img,
+footer.social .social-city .social-ico > img {
+  width: 40px;
 }
 
 header.social-index .nav-net,
@@ -50,7 +55,7 @@ footer.social .nav-net {
   flex-grow: 2;
   padding: 10px;
   margin-top: 2vh;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 header.social-index .nav-net > ul,
@@ -66,9 +71,9 @@ footer.social .nav-net > ul > li img {
   width: 2rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   p {
@@ -77,28 +82,33 @@ footer.social .nav-net > ul > li img {
 
   header.social-index,
   footer.social {
-    height: 15vh;
+    max-height: 25vh;
+    list-style-type: none;
   }
 
   header.social-index .social-city,
   footer.social .social-city {
-    margin-top: 50px;
-    font-size: 12px;
+    margin: 2px 0 0 2px;
+    font-size: 2em;
+    display: flex;
+    align-items: end;
+  }
+  header.social-index .social-city .address,
+  footer.social .social-city .address {
+    display: none;
   }
 
   header.social-index .nav-net,
   footer.social .nav-net {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 15px;
   }
 
   header.social-index .nav-net > ul,
   footer.social .nav-net > ul {
-    display: flex;
-    list-style-type: none;
     justify-content: center;
     margin-right: 5%;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   header.social-index .nav-net > ul > li img,
@@ -106,3 +116,63 @@ footer.social .nav-net > ul > li img {
     width: 20px;
   }
 }
+
+/****************************************** 
+  header - menu
+*******************************************/
+
+.sticky-wrapper {
+  position: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 20%;
+}
+
+.sticky-wrapper nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ededa3;
+  width: 100%;
+}
+
+.sticky-wrapper img,
+.sticky-wrapper h2  {
+  /* margin-top: 98vh; */
+  width: 10%;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1rem;
+}
+
+.sticky-wrapper h2{
+  width: 15%;
+}
+.sticky-wrapper .menu{
+  width: 75%;
+  flex-grow: 5rem;
+  display: flex;
+  justify-content: end;
+}
+
+
+.sticky-wrapper  ul {
+  display: flex;
+  flex-direction: row; 
+  list-style-type: none;
+  background-color: #edede3;
+}
+
+.sticky-wrapper  li {
+  flex-grow: 4rem;
+  font-size: 2.5ex;
+  padding: 1.5ex;
+  
+}
+
+/*-----------------------------------
+  portada
+-----------------------------------*/
+
