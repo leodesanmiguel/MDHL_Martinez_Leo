@@ -189,7 +189,7 @@ footer.social .nav-net > ul > li img {
   position: absolute;
   top: 10%;
   left: 0;
-  width: 100%;
+  width: 98%;
   height: 90%;
 }
 
@@ -210,12 +210,16 @@ footer.social .nav-net > ul > li img {
 }
 
 .portada, .where-is {
-  position:relative ;
-  bottom: 370px;
+  position:flex ;
+  flex-direction: column;
+  /* bottom: 300px; */
+  align-items: flex-start;
+  align-content: stretch;
 }
 
 .where-is h3 {
   text-align: center;
+  align-self: flex-start;
   margin-top: 0.5em;
   font-size: 3rem;
   background-color: #000;
