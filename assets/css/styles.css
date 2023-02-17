@@ -428,3 +428,81 @@ button{
   background-color: blueviolet;
   border-radius: 20px;
 }
+
+/*--------------------------------
+  tablas
+---------------------------------*/
+
+table {
+  table-layout:fixed;
+  width: 90%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+  border-radius: 20px;
+  background: url(../images/design1_image1.jpg);
+  color: rgb(20, 35, 75);
+  margin-left: calc(6% / 2);
+  
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt', cursive;
+  
+}
+
+th {
+  letter-spacing: 2px;
+}
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 35%;
+}
+
+thead th:nth-child(4) {
+  width: 25%;
+}
+
+th, td {
+  padding: 1rem;
+}
+thead, tfoot {
+  text-shadow: 1px 1px 1px rgb(146, 39, 39);
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(113, 36, 36, 0.1), rgba(226, 222, 222, 0.5));
+  border: 3px solid purple;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #b196e7aa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ededa3aa;
+}
+
+tbody tr {
+  background-image: url();
+}
+
+table {
+  background-color: #ff33ccaa;
+}
+
+caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #200e69;
+  text-align: right;
+  letter-spacing: 2px;
+}
