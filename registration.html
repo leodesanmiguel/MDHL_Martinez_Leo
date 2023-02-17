@@ -14,8 +14,8 @@
     <header class="social">
         <div class="sticky-wrapper" style="height: 76px;">
             <nav>
-                <img src="./assets/images/Logo_Mighty_ducks-01.png" alt="logo MDHL">
-                <h3> <a href="./index.html"> Mighty Ducks Hockey League </a></h3>
+                <img src="./assets/images/Logo_Mighty_ducks-01.png" width="200" alt="logo MDHL">
+                <h1> <a href="./index.html"> Mighty Ducks Hockey League </a></h1>
                 <ul>
                     <li class="menu-1"><a href="./events.html">Upcoming</a></li>
                     <li class="menu-2"><a href="./about.html">About MDHL</a></li>
@@ -28,56 +28,55 @@
     </header>
     <main>
         <div class="title">
-            <h1>Registration Form</h1>
+            <h2>Registration Form</h2>
         </div>
         <div class="secciones">
             <section>
                 <form action="./show_data.html">
                     <fieldset>
                         <legend>
-                            <h2>Player Information</h2>
+                            <h3>Player Information</h3>
                         </legend>
                         <div class="form-row col-2">
-                            <label for="first-name">Player's First Name: <small>(NO NICKNAMES)</small>
+                            <label for="firstname">Player's First Name: <small>(NO NICKNAMES)</small>
                                 <input name="firstname" maxlength="80" type="text" id="firstname"><span
                                     style="color:red;">*</span>
                             </label>
-                            <label for="last-name">Last Name:
+                            <label for="lastname">Last Name:
                                 <input name="lastname" maxlength="80" type="text" id="lastname"><span
                                     style="color:red;">*</span>
                             </label>
                         </div>
                         <div class="form-row col-1">
-                            <label for="street-address">Street Address:
+                            <label for="streetadress">Street Address:
                                 <input name="streetadress" maxlength="80" type="text" id="streetadress"><span
                                     style="color:red;">*</span>
                             </label>
                         </div>
                         <div class="form-row col-2">
-                            <label for="cityname">City:
+                            <label for="city">City:
                                 <input name="city" maxlength="80" type="text" id="city"><span
                                     style="color:red;">*</span>
                             </label>
-                            <label for="zip-code">Zip Code:
+                            <label for="zipcode">Zip Code:
                                 <input name="zipcode" type="number" min="60000" max="60999" id="zipcode"><span
                                     style="color:red;">*</span>
                             </label>
                         </div>
 
                         <div class="form-row col-2">
-                            <label for="birth-day">Birth Date (mm/dd/yyyy):
-                                <input name="birthday" maxlength="80" type="date" id="birthday"><span
-                                    style="color:red;">*</span>
+                            <label for="birthday">Birth Date (mm/dd/yyyy):
+                                <input name="birthday" type="date" id="birthday"><span style="color:red;">*</span>
                             </label>
-                            <label for="gender">Gender:
+                            <p>Gender:
                                 <label> Female
                                     <input name="gender" type="radio" value="F"> </label>
                                 <label> Male
                                     <input name="gender" type="radio" value="M"> </label>
-                            </label>
+                            </p>
                         </div>
                         <div class="form-row col-1">
-                            <label for="grade">Grade:
+                            <p>Grade:
                                 <label> Pre-School
                                     <input name="grade" type="radio" value="0"> </label>
                                 <label> 1st.
@@ -90,7 +89,7 @@
                                     <input name="grade" type="radio" value="4"> </label>
                                 <label> 5th.
                                     <input name="grade" type="radio" value="5"> </label>
-                            </label>
+                            </p>
                         </div>
 
                     </fieldset>
@@ -112,8 +111,8 @@
                                 <input name="school" type="checkbox" value="North Elementay"> </label>
                             <label> South Elementay
                                 <input name="school" type="checkbox" value="South Elementay"> </label>
+                        </div>
                     </fieldset>
-
                     <fieldset>
                         <legend>
                             <h2>What position(s) do you normaly play?</h2><small>(check all that apply)</small>
@@ -132,6 +131,7 @@
                                 <input name="school" type="checkbox" value="North Elementay"> </label>
                             <label> South Elementay
                                 <input name="school" type="checkbox" value="South Elementay"> </label>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>
@@ -173,13 +173,12 @@
                                 the cancellation policy and agree to its terms.
                             </p>
                             <label> Parent/Guardian Full Name:
-                                <input name="fullname" maxlength="80" type="text" id="fullname"
-                                    placeholder="Last Name, First Name"><span style="color:red;">*</span> </label>
-                            <label> Parent/Guardian Signature:
-                                <textarea name="signature" id="signature" cols="30" rows="5"></textarea>
-                                <label> Date:
-                                    <input name="datenow" disabled type="text" id="datenow" value="16/02/2023"><span
-                                        style="color:red;">*</span> </label>
+                                <input name=" fullname" type="hidden" value="lastname, firstname">
+                            </label>
+                            <label for="signature"> Parent/Guardian Signature:
+                                <textarea name="signature" id="signature" cols="30" rows="5"></textarea></label>
+                            <label for="datenow"> Date:
+                                <input name="datenow" disabled type="text" id="datenow" value="16/02/2023"></label>
                         </div>
                     </fieldset>
                     <button>Submit Registration</button>
@@ -188,7 +187,7 @@
         </div>
         <div class="derecha">
             <figure>
-                <img src="./assets/images/hockey_3.jpg" alt="">
+                <img src="./assets/images/hockey_3.jpg" alt="hockey_3">
                 <figcaption>
                     The two defensive players.
                 </figcaption>
@@ -197,7 +196,7 @@
     </main>
     <footer class="social">
         <div class="social-city">
-            <p class="social-ico">&#9992;&nbsp
+            <p class="social-ico">&#9992;&nbsp;
                 3843 N California Ave. Chicago, IL 60618 (773) 478-2609
             </p>
             <p>
