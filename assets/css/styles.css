@@ -21,27 +21,21 @@ p {
   letter-spacing: 0.5px;
 } 
 
-
 a {
   color: blueviolet;
   text-decoration: none;
-  padding: 0.3rem;
+  padding: 0.25rem;
 }
 
 a:hover {
   color: #ededa3;
   background-color: blueviolet;
   border: 1px rgb(89, 18, 156) solid;
-  border-radius: 20px;
+  border-radius: 10px;
 
 }
 
-/* ::selection {
-  background: rgb(25, 18, 156);
-  color: #edede3;
-} */
-
-.container {
+.container, .container-index {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -80,26 +74,22 @@ footer.social {
 
 .nav-net {
   display: flex;
-  align-items: center;
-  flex-grow: 2;
-
-
+  align-items: center; 
+  flex-grow: 1; 
 }
 
 .nav-net ul {
   display: flex;
   list-style-type: none;
-  gap: 3rem;
   justify-content: flex-end;
   flex-grow: 1;
   margin-right: 5%;
+  gap: 1.5;
 }
 
-.nav-net ul li {
-  justify-content: flex-end;
-  /* padding-top: 2rem; */
+.nav-net ul li.menu-registro{
+  gap:2;
 }
-
 
 
 .custom-underline {
