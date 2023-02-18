@@ -189,7 +189,7 @@ a:hover {
 .videoWrapper {
   position: flex;
   margin: 3vh;
-  padding-bottom: 56.25%;
+  padding-bottom: calc(100vh - 30vh);
   /* 16:9 */
   height: 0;
   z-index: -100;
@@ -207,7 +207,7 @@ a:hover {
 .news-detail-image {
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
 
 .overlay {
@@ -223,7 +223,7 @@ a:hover {
 .where-is {
   position: flex;
   flex-direction: column;
-  /* bottom: 300px; */
+  margin-bottom: 40px;
   align-items: flex-start;
   align-content: stretch;
 }
